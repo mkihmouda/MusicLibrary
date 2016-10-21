@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		045FC3EB1DBA7CCD00A56F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC3EA1DBA7CCD00A56F3B /* AppDelegate.swift */; };
-		045FC3ED1DBA7CCD00A56F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC3EC1DBA7CCD00A56F3B /* ViewController.swift */; };
 		045FC3F01DBA7CCD00A56F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045FC3EE1DBA7CCD00A56F3B /* Main.storyboard */; };
 		045FC3F31DBA7CCD00A56F3B /* MusicLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 045FC3F11DBA7CCD00A56F3B /* MusicLibrary.xcdatamodeld */; };
 		045FC3F51DBA7CCD00A56F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045FC3F41DBA7CCD00A56F3B /* Assets.xcassets */; };
 		045FC3F81DBA7CCD00A56F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045FC3F61DBA7CCD00A56F3B /* LaunchScreen.storyboard */; };
 		045FC4031DBA7CCD00A56F3B /* MusicLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC4021DBA7CCD00A56F3B /* MusicLibraryTests.swift */; };
 		045FC40E1DBA7CCD00A56F3B /* MusicLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC40D1DBA7CCD00A56F3B /* MusicLibraryUITests.swift */; };
+		045FC41F1DBA7D8300A56F3B /* PartyRockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC41E1DBA7D8300A56F3B /* PartyRockModel.swift */; };
+		045FC4211DBA7D9C00A56F3B /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC4201DBA7D9C00A56F3B /* VideoVC.swift */; };
+		045FC4231DBA7DB900A56F3B /* PartyRockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC4221DBA7DB900A56F3B /* PartyRockCell.swift */; };
+		045FC4251DBA7E0400A56F3B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FC4241DBA7E0400A56F3B /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		045FC3E71DBA7CCD00A56F3B /* MusicLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045FC3EA1DBA7CCD00A56F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		045FC3EC1DBA7CCD00A56F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		045FC3EF1DBA7CCD00A56F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045FC3F21DBA7CCD00A56F3B /* MusicLibrary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicLibrary.xcdatamodel; sourceTree = "<group>"; };
 		045FC3F41DBA7CCD00A56F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		045FC4091DBA7CCD00A56F3B /* MusicLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045FC40D1DBA7CCD00A56F3B /* MusicLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLibraryUITests.swift; sourceTree = "<group>"; };
 		045FC40F1DBA7CCD00A56F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045FC41E1DBA7D8300A56F3B /* PartyRockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRockModel.swift; sourceTree = "<group>"; };
+		045FC4201DBA7D9C00A56F3B /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		045FC4221DBA7DB900A56F3B /* PartyRockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRockCell.swift; sourceTree = "<group>"; };
+		045FC4241DBA7E0400A56F3B /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,10 @@
 		045FC3E91DBA7CCD00A56F3B /* MusicLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				045FC41D1DBA7D2C00A56F3B /* Controllers */,
+				045FC41B1DBA7D1800A56F3B /* Views */,
+				045FC41C1DBA7D2400A56F3B /* Models */,
 				045FC3EA1DBA7CCD00A56F3B /* AppDelegate.swift */,
-				045FC3EC1DBA7CCD00A56F3B /* ViewController.swift */,
 				045FC3EE1DBA7CCD00A56F3B /* Main.storyboard */,
 				045FC3F41DBA7CCD00A56F3B /* Assets.xcassets */,
 				045FC3F61DBA7CCD00A56F3B /* LaunchScreen.storyboard */,
@@ -126,6 +134,31 @@
 				045FC40F1DBA7CCD00A56F3B /* Info.plist */,
 			);
 			path = MusicLibraryUITests;
+			sourceTree = "<group>";
+		};
+		045FC41B1DBA7D1800A56F3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				045FC4221DBA7DB900A56F3B /* PartyRockCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		045FC41C1DBA7D2400A56F3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				045FC41E1DBA7D8300A56F3B /* PartyRockModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		045FC41D1DBA7D2C00A56F3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				045FC4241DBA7E0400A56F3B /* MainVC.swift */,
+				045FC4201DBA7D9C00A56F3B /* VideoVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045FC4211DBA7D9C00A56F3B /* VideoVC.swift in Sources */,
+				045FC4251DBA7E0400A56F3B /* MainVC.swift in Sources */,
+				045FC4231DBA7DB900A56F3B /* PartyRockCell.swift in Sources */,
 				045FC3F31DBA7CCD00A56F3B /* MusicLibrary.xcdatamodeld in Sources */,
-				045FC3ED1DBA7CCD00A56F3B /* ViewController.swift in Sources */,
 				045FC3EB1DBA7CCD00A56F3B /* AppDelegate.swift in Sources */,
+				045FC41F1DBA7D8300A56F3B /* PartyRockModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
